@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem de Barra
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de progresso do scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header principal -->
+    <header class="main-header">
+        <h1>Navegação Inteligente</h1>
+        <p>Barra de navegação que se adapta ao seu scroll</p>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ScrollNav</a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#recursos" class="nav-link">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demonstracao" class="nav-link">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="inicio" class="section fade-in">
+            <h2>Navegação Inteligente com JavaScript</h2>
+            <p>Este projeto demonstra uma implementação avançada de barra de navegação fixa utilizando eventos de scroll, getBoundingClientRect() e técnicas modernas de JavaScript. A barra se torna fixa automaticamente quando você rola a página, proporcionando uma experiência de usuário fluida e intuitiva.</p>
+            
+            <div class="demo-cards">
+                <div class="card">
+                    <h3>Scroll Dinâmico</h3>
+                    <p>A navegação responde inteligentemente ao movimento de scroll, tornando-se fixa no momento exato para melhor usabilidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Design Responsivo</h3>
+                    <p>Totalmente adaptável para dispositivos móveis com menu hambúrguer e animações suaves.</p>
+                </div>
+                <div class="card">
+                    <h3>Performance Otimizada</h3>
+                    <p>Utiliza técnicas de throttling e getBoundingClientRect para máxima performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section fade-in">
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto foi desenvolvido para demonstrar conceitos avançados de JavaScript DOM manipulation, incluindo:</p>
+            
+            <div class="demo-cards">
+                <div class="card">
+                    <h3>Event Listeners</h3>
+                    <p>Implementação de listeners de scroll otimizados com throttling para melhor performance e responsividade da aplicação.</p>
+                </div>
+                <div class="card">
+                    <h3>getBoundingClientRect()</h3>
+                    <p>Uso preciso da API getBoundingClientRect para calcular posições dos elementos em tempo real durante o scroll.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS Transitions</h3>
+                    <p>Animações fluidas e transições suaves que criam uma experiência visual agradável e profissional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="section fade-in">
+            <h2>Recursos Implementados</h2>
+            <p>O projeto conta com diversos recursos modernos que demonstram boas práticas de desenvolvimento web:</p>
+            
+            <div class="demo-cards">
+                <div class="card">
+                    <h3>Navegação Ativa</h3>
+                    <p>Sistema que detecta automaticamente a seção visível e destaca o item correspondente na navegação.</p>
+                </div>
+                <div class="card">
+                    <h3>Barra de Progresso</h3>
+                    <p>Indicador visual do progresso de leitura da página, atualizado em tempo real conforme o scroll.</p>
+                </div>
+                <div class="card">
+                    <h3>Scroll to Top</h3>
+                    <p>Botão inteligente que aparece automaticamente permitindo retorno rápido ao topo da página.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="demonstracao" class="section fade-in">
+            <h2>Demonstração Técnica</h2>
+            <p>Continue rolando para ver todos os recursos em ação! Observe como a barra de navegação se comporta, como os links ativos mudam conforme as seções, e como a barra de progresso acompanha sua leitura.</p>
+            
+            <div class="demo-cards">
+                <div class="card">
+                    <h3>Intersection Observer</h3>
+                    <p>Detecção precisa de quando elementos entram e saem da viewport para animações de entrada suaves.</p>
+                </div>
+                <div class="card">
+                    <h3>Animações CSS</h3>
+                    <p>Utilização de transforms, transitions e keyframes para criar efeitos visuais atraentes.</p>
+                </div>
+                <div class="card">
+                    <h3>Menu Mobile</h3>
+                    <p>Sistema de navegação adaptativo que se transforma em menu hambúrguer em telas menores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section fade-in">
+            <h2>Tecnologias Utilizadas</h2>
+            <p>Este projeto foi construído utilizando apenas tecnologias web nativas, demonstrando que é possível criar experiências ricas sem dependências externas.</p>
+            
+            <div class="demo-cards">
+                <div class="card">
+                    <h3> HTML5 Semântico</h3>
+                    <p>Estrutura bem organizada com tags semânticas para melhor acessibilidade e SEO.</p>
+                </div>
+                <div class="card">
+                    <h3> CSS3 Moderno</h3>
+                    <p>Flexbox, Grid, Custom Properties, e animações avançadas para um design contemporâneo.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript Vanilla</h3>
+                    <p>Código JavaScript puro, sem frameworks, demonstrando domínio dos fundamentos da linguagem.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Scroll to Top -->
+    <button class="scroll-to-top" id="scrollToTop" title="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Projeto de Navegação Inteligente</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
