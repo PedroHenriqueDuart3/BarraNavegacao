@@ -38,7 +38,7 @@ O objetivo é praticar conceitos de **frontend**, como estilização, responsivi
    Não é necessário instalar dependências, pois o projeto usa apenas HTML, CSS e JavaScript puro.
 
 ## 📸 Demonstração
-![Demonstração da Barra de Navegação](./demo.mp4)
+![Demonstração da Barra de Navegação](./demo.gif)
 
 ## 📖 Aprendizados
 
