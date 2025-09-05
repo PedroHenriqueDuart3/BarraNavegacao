@@ -30,10 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Botão scroll to top
                 botaoTopo.classList.toggle("visible", posicaoScroll > window.innerHeight * 0.3);
 
-                // Atualizar link ativo
                 atualizarLinkAtivo();
 
-                // Animações fade-in
                 animarElementos();
             }
 
@@ -55,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
 
-            // Animações de entrada
             function animarElementos() {
                 fadeElements.forEach((el) => {
                     const rect = el.getBoundingClientRect();
@@ -65,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
 
-            // Scroll suave para seções
             function rolarParaSecao(alvo) {
                 const elemento = document.querySelector(alvo);
                 if (elemento) {
@@ -77,14 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
 
-            // Event Listeners
             window.addEventListener("scroll", aoRolar);
             
             window.addEventListener("resize", () => {
                 alturaNav = barraNav.getBoundingClientRect().height;
             });
 
-            // Navigation links
             linksNav.forEach((link) => {
                 link.addEventListener("click", (e) => {
                     e.preventDefault();
@@ -104,8 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navMenu.classList.toggle("active");
             });
 
-            // Inicializar animações na carga
             animarElementos();
 
-            console.log("🚀 Navegação ScrollNav inicializada com sucesso!");
+            console.log("Navegação ScrollNav inicializada com sucesso!");
         });
